@@ -32,6 +32,9 @@ public class FunctionalInterfaceSamples {
         UnaryOperator<String> str  = (msg)-> msg.toUpperCase();
         System.out.println(str.apply("This is my message in upper case"));
 
+        Printer print = () -> Calculate.getNumber();
+
+
     }
 
 }
