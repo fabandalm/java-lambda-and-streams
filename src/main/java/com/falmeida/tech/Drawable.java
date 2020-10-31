@@ -8,6 +8,10 @@ public interface Drawable {
         System.out.println("Messagem");
     }
 
+    default void sayHello(){
+        System.out.println("Hello");
+    }
+
 }
 
 class Rectangle implements Drawable{
