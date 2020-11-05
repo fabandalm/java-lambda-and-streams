@@ -1,4 +1,4 @@
-package com.falmeida.tech;
+package com.falmeida.tech.binding;
 
 public class Dog {
 
