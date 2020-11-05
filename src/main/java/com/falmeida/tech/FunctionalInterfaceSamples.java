@@ -25,14 +25,14 @@ public class FunctionalInterfaceSamples {
         System.out.println(s.get());
 
         //Binary Operator example
-        BinaryOperator<Integer> add = (a, b) -> a + b;
+        BinaryOperator<Integer> add = Integer::sum;
         System.out.println("add 10 + 25: " + add.apply(10, 25));
 
         //Unary Operator example
-        UnaryOperator<String> str  = (msg)-> msg.toUpperCase();
+        UnaryOperator<String> str  = String::toUpperCase;
         System.out.println(str.apply("This is my message in upper case"));
 
-        Printer print = () -> Calculate.getNumber();
+        Printer print = Calculate::getNumber;
 
 
     }
