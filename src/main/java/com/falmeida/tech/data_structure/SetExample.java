@@ -7,8 +7,7 @@ public class SetExample {
 
     public static void main(String[] args) {
         // Set demonstration using HashSet
-        Set<String> hash_Set
-                = new HashSet<String>();
+        Set<String> hash_Set = new HashSet<String>();
 
         hash_Set.add("Geeks");
         hash_Set.add("For");

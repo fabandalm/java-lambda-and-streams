@@ -1,12 +1,22 @@
 package com.falmeida.tech.binding;
 
-public class Dog {
+public class Dog extends Animal{
 
-    private void eat(){System.out.println("dog is eating...");}
+    void eat(){
+        System.out.println("dog is eating...");
+    }
 
     public static void main(String args[]){
+
         Dog d1=new Dog();
         d1.eat();
+
+        Animal d2 = new Dog();
+        d2.eat();
+
+        Animal a1 = new Animal();
+        a1.eat();
+
     }
 
 }
