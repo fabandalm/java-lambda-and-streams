@@ -10,7 +10,7 @@ public class Movie implements Comparable<Movie>{
     private int year;
 
     @Override
-    public int compareTo(Movie o) {
+    public int compareTo(Movie m) {
         return this.year - m.year;
     }
 
