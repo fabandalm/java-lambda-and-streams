@@ -11,24 +11,11 @@ public class OptionalSample {
 
         System.out.println("Non-Empty Optional:" + gender);
         System.out.println("Non-Empty Optional: Gender value : " + gender.get());
-        System.out.println("Empty Optional: " + Optional.empty());
-
-        System.out.println(healthcheck("short"));
-        System.out.println(healthcheck("full"));
-        System.out.println(healthcheck("xxx"));
+        System.out.println("Empty Optional: " + Optional.ofNullable(answer1));
+        System.out.println("Empty Optional: " + Optional.ofNullable(answer2));
+        System.out.println("Empty Optional: " + Optional.of(answer2));
 
     }
 
-    public static String healthcheck(String format){
-
-        if(format.contentEquals("short")){
-            return "{\"status\":\"ok\"}";
-        }else if (format.contentEquals("full")){
-            return String.format("{\"currentTime\":\"x\",\"application\":\"OK\"}");
-        }else{
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-
-    }
 
 }
